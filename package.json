@@ -1,5 +1,5 @@
 {
-  "name": "try-no-throw",
+  "name": "try-never-throw",
   "version": "0.0.0",
   "description": "TypeScript utility library for functional error handling with Result types",
   "keywords": [
