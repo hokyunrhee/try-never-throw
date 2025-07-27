@@ -1,0 +1,58 @@
+{
+  "name": "try-no-throw",
+  "version": "0.0.0",
+  "description": "TypeScript utility library for functional error handling with Result types",
+  "keywords": [
+    "try",
+    "catch",
+    "error",
+    "typescript"
+  ],
+  "author": "Hokyun Lee <hokyun.rhee@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "oxlint --tsconfig=tsconfig.json",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build",
+    "semantic-release": "semantic-release"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hokyunrhee/try-no-throw.git"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "^12.0.2",
+    "@types/node": "^22.16.5",
+    "@vitest/coverage-v8": "^3.2.4",
+    "oxlint": "^1.8.0",
+    "prettier": "^3.6.2",
+    "semantic-release": "^24.2.7",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
