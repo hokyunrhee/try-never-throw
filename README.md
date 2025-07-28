@@ -1,23 +1,23 @@
-# try-no-throw
+# try-never-throw
 
 Convert throwing functions into Result types. Zero dependencies, 4 functions, full TypeScript support.
 
-[![npm version](https://badge.fury.io/js/try-no-throw.svg)](https://badge.fury.io/js/try-no-throw)
+[![npm version](https://badge.fury.io/js/try-never-throw.svg)](https://badge.fury.io/js/try-never-throw)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
 ```bash
-npm install try-no-throw
-pnpm add try-no-throw
-yarn add try-no-throw
+npm install try-never-throw
+pnpm add try-never-throw
+yarn add try-never-throw
 ```
 
 ## Usage
 
 ```typescript
-import { tryit, tryitAsync, isSuccess, isError } from 'try-no-throw'
+import { tryit, tryitAsync, isSuccess, isError } from 'try-never-throw'
 
 // Sync operations
 const result = tryit(() => maybeThrowing())

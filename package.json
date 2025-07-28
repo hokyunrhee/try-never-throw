@@ -39,7 +39,7 @@
   "packageManager": "pnpm@10.11.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hokyunrhee/try-no-throw.git"
+    "url": "https://github.com/hokyunrhee/try-never-throw.git"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
